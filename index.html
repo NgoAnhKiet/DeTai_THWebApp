@@ -3,16 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LonaKyleCinema</title>
 
-    <!-- link -->
-     <link rel="stylesheet" href="./assets/css/homepage.css">
+    <!-- icon  -->
+    <link rel="icon" href="./assets/images/logo_LonaKyleCinemaNew.png">
+
+    <!-- Css styles -->
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+
+    <!-- Google font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cal+Sans&display=swap" rel="stylesheet"> -->
+
+    <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
-    <div class="container">
-        <img class="logo" src="./assets/images/logo_LonaKyleCinema.png" alt="logo_LonaKyleCinema">
-        <h1>HelloWorld</h1>
+    <div id="container">
+      <!-- ------------------------------------Header------------------------------------ -->
+        <div id="header">
+          <a href="index.html">
+            <img class="logo" src="./assets/images/logo_LonaKyleCinemaNew.png" alt="logo_LonaKyleCinema">
+          </a>
+
+          <div id="timkiem">
+            <input id="o_timkiem" type="text" name="" placeholder="Nhập phim cần tìm..." size="60px">
+            <button id="nut_timkiem"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+          <div id="dangnhap">
+            <a href="#" id="nut_dangnhap">
+              <i class="fa-regular fa-user"></i>
+              <p>Đăng nhập</p>
+            </a>
+          </div>
+        </div>
+
+      <!-- ------------------------------------Menu------------------------------------ -->
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="#">Phim</a></li>
+            <li><a href="#">Lịch Chiếu</a></li>
+            <li><a href="#">Giá Vé</a></li>
+            <li><a href="#">Ưu Đãi</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+            <li><a href="#">Lab Thực Hành</a></li>
+          </ul>
+        </div>
+
+      <!-- ------------------------------------Slider------------------------------------ -->
+        <div id="slider">
+
+          <!-- list ảnh -->
+          <div class="list_slider">
+            <div class="item_slider">
+              <img src="./assets/images/phim_LatMat8.png" alt="LatMat8">
+            </div>
+
+            <div class="item_slider">
+              <img src="./assets/images/phim_DiaDao.jpg" alt="DiaDao">
+            </div>
+            
+            <div class="item_slider">
+              <img src="./assets/images/phim_ThamTuKien.jpg" alt="ThamTuKien">
+            </div>
+
+            <div class="item_slider">
+              <img src="./assets/images/phim_DoiSanQuy.jpg" alt="DoiSanQuy">
+            </div>
+
+            <div class="item_slider">
+              <img src="./assets/images/phim_BietDoiSamSet.png" alt="BietDoiSamSet">
+            </div>
+          </div>
+
+          <!-- button prev and next -->
+          <div class="buttons_slider">
+            <button id="prev_slider"><</button>
+            <button id="next_slider">></button>
+          </div>
+
+          <!-- dots (5 items) => 5dots -->
+          <ul class="dots_slider">
+            <li class="active_slider"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+        </div>
+      
+      <!-- ------------------------------------Content------------------------------------ -->
+        <div id="content">
+
+        </div>
+
+      <!-- ------------------------------------Footer------------------------------------ -->
+        <div id="footer">
+          <table id="table_info">
+            <tr><td colspan="4" style="height: 20px;"></td></tr>
+            <tr>
+              <th>LONAKYLECINEMA</th>
+              <th>ĐIỀU KHOẢN SỬ DỤNG</th>
+              <th>KẾT NỐI VỚI CHÚNG TÔI</th>
+              <th>CHĂM SÓC KHÁCH HÀNG</th>
+            </tr>
+            <tr>
+              <td><a href="#">Giới Thiệu</a></td>
+              <td><a href="#">Điều Khoản Chung</a></td>
+              <td rowspan="2">
+                <a href="https://www.facebook.com/DHCNSG"><img class="icon_footer" src="./assets/icons/icons8-facebook-48.png" alt=""></a>
+                <a href="https://zalo.me/2367277342345316999"><img class="icon_footer" src="./assets/icons/icons8-zalo-48.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCB7VPhXVqyZOepLCDSErwiQ"><img class="icon_footer" src="./assets/icons/icons8-youtube-48.png" alt=""></a>
+                <a href="https://www.tiktok.com/@dhcnsg?_t=ZS-8w9v5FLRGA3&_r=1"><img class="icon_footer" src="./assets/icons/icons8-tiktok-48.png" alt=""></a>
+
+              </td>
+              <td>Hotline: 028 3850 5520</td>
+            </tr>
+            <tr>
+              <td><a href="#">Tiện Ích Online</a></td>
+              <td><a href="#">Điều Khoản Giao Dịch</a></td>
+              <td rowspan="2">Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)</td>
+            </tr>
+            <tr>
+              <td><a href="#">Thẻ Quà Tặng</a></td>
+              <td><a href="#">Chính Sách Thanh Toán</a></td>
+              <td rowspan="2">
+                <a href="#"><img id="logo_BCT" src="./assets/icons/logo-da-thong-bao-bo-cong-thuong.jpg" alt=""></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">Tuyển Dụng</a></td>
+              <td><a href="#">Chính Sách Bảo Mật</a></td>
+              <td>Email hỗ trợ: <a href="mailto:hoidap@lonakylecinema.com">hoidap@lonakylecinema.com</a></td>
+            </tr>
+            <tr><td colspan="4" style="height: 20px;"></td></tr>
+          </table>
+
+          <table id="thongtinCTy">
+            <tr><td colspan="4" style="height: 20px;"></td></tr>
+            <tr>
+              <td rowspan="4"><img id="logo_footer" src="./assets/images/logo_LonaKyleCinemaNew.png" alt="logo_LonaKyleCinema"></td>
+              <th>CÔNG TY TNHH LONAKYLECINEMA</th>
+            </tr>
+            <tr>
+              <td>Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh</td>
+            </tr>
+            <tr>
+              <td>Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, Hồ Chí Minh, Vietnam</td>
+            </tr>
+            <tr>
+              <td>Đường dây nóng (Hotline): 028 3850 5520</td>
+            </tr>
+            <tr>
+              <th colspan="2" id="diachiCTy">
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9543420451755!2d106.67525180973894!3d10.738002459858915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2sSaigon%20Technology%20University!5e0!3m2!1sen!2s!4v1746617300567!5m2!1sen!2s" width="1000" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </th>
+            </tr>
+            <tr><td colspan="4" style="height: 20px;"></td></tr>
+          </table>
+
+          <div id="thongtinSinhVien">
+            <strong>Họ tên:</strong> Ngô Anh Kiệt
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>MSSV:</strong> DH52200948 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>Lớp:</strong> D22_TH02 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>Mail:</strong> dh52200948@student.stu.edu.vn 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <strong>Nhóm 4 - Thứ 2 - Ca 1</strong> 
+          </div>
+        </div>
+      
     </div>
+
+    <!-- js homepage -->
+     <script src="./assets/js/homepage.js"></script>
+
+    <!-- Js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
