@@ -187,7 +187,87 @@
 
 /*------------------------------------Content------------------------------------*/
     #content{
+        margin: 0 auto;
+        width: 1200px;
+        max-width: 90%;
 
+        #phimDangChieu{
+            margin-top: 50px;
+        }
+
+        #phimSapChieu{
+            margin-top: 50px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 220px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+            gap: 20px; /* Khoảng cách giữa các item */
+            justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
+
+            .movie-item {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden; /* Để bo góc cho ảnh */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                text-align: center;
+                position: relative; /* Để định vị tag tuổi */
+
+                img {
+                    width: 100%;
+                    height: 330px; /* Điều chỉnh chiều cao ảnh theo ý muốn */
+                    object-fit: cover; /* Đảm bảo ảnh vừa vặn mà không bị méo */
+                    display: block;
+                }
+
+                .movie-info {
+                    padding: 15px;
+
+                    h3 {
+                        font-size: 18px;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        min-height: 40px;
+                    }
+
+                    /* h4 {
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                        color: #555;
+                    } */
+
+                    .rating {
+                        font-size: 0.9em;
+                        font-weight: bold;
+                        color: #e7a200;
+                        margin-bottom: 10px;
+
+                        .fa-star {
+                            margin-right: 3px;
+                        }
+                    }
+
+                    .tag {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background-color: rgba(0,0,0,0.7);
+                        color: white;
+                        padding: 3px 8px;
+                        border-radius: 4px;
+                        font-size: 0.8em;
+                        font-weight: bold;
+                    }
+
+                    .t18 { background-color: #d9534f; }
+                    .t16 { background-color: #f0ad4e; }
+                    .t13 { background-color: #5bc0de; }
+                    .t0 { background-color: #5cb85c; }
+                }
+            }
+        }
     }
 
 /*------------------------------------Footer------------------------------------*/
