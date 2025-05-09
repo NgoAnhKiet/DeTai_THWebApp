@@ -86,7 +86,7 @@
     
                 #o_timkiem{
                     height: 20px;
-                    width: 100%;
+                    width: 190px;
                     font-size: 10px;
                     border-radius: 5px 0px 0px 5px;
                 }
@@ -525,7 +525,7 @@
 
                         iframe{
                             height: 200px;
-                            width: 400px;
+                            width: 350px;
                         }
                     }
                 }
@@ -533,9 +533,9 @@
     
             #thongtinSinhVien{
                 width: 100%;
-                line-height: 40px;
+                line-height: 20px;
                 text-align: center;
-                font-size: 14px;
+                font-size: 10px;
             }
         }
     }
