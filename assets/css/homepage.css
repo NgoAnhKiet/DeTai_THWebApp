@@ -68,6 +68,7 @@
 
     @media screen and (max-width: 450px) {
         #header{
+            width: 100%;
             a{
                 display: flex;
                 .logo{
@@ -159,7 +160,8 @@
 
     @media screen and (max-width: 450px){
         #menu{
-    
+            width: 100%;
+            
             ul{
                 width: 100%;
                 line-height: 20px;
@@ -477,24 +479,29 @@
 
     @media screen and (max-width: 450px){
         #footer{
+            width: 100%;
             margin-top: 50px;
             #table_info{
                 border: 1px solid #000 ;
-                width: 450px;
-                margin: auto;
+                width: 100%;
+
                 tr{
                     th, td{
                         width: 25%;
-                        padding: 0 50px;
+                        padding: 0 10px;
+                        font-size: 10px;
                     }
     
                     td{
                         a{
-                            text-decoration: none;
-                            color: #000;
+                            font-size: 10px;
+
+                            img{
+                                width: 20px;
+                            }
     
                             #logo_BCT{
-                                width: 200px;
+                                width: 100px;
                             }
                         }
                     }
@@ -504,17 +511,22 @@
             #thongtinCTy{
                 border: 1px solid #000 ;
                 width: 100%;
-                margin: auto;
                 tr{
                     th, td{
-                        padding: 0 50px;
+                        padding: 0 5px;
+                        font-size: 10px;
                     }
                     #logo_footer{
-                        width: 250px;
+                        width: 100px;
                     }
     
                     #diachiCTy{
                         text-align: center;
+
+                        iframe{
+                            height: 200px;
+                            width: 400px;
+                        }
                     }
                 }
             }
@@ -523,6 +535,7 @@
                 width: 100%;
                 line-height: 40px;
                 text-align: center;
+                font-size: 14px;
             }
         }
     }
