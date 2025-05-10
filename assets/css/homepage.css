@@ -209,6 +209,18 @@
                         font-size: 10px;
                     }
                 }
+
+                .dropdown_cha{
+
+                    .dropdown_con{
+                        width: 110px;
+
+                        .dropdown_con li a {
+
+                        
+                        }
+                    }
+                }
             }
         }
     }
