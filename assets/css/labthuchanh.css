@@ -1,0 +1,58 @@
+/*------------------------------------Content------------------------------------*/
+#content_TH{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 90%;
+
+    h2{
+        margin-top: 50px;
+    }
+
+    .box_labthuchanh{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+        gap: 50px; /* Khoảng cách giữa các item */
+        justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
+
+        .box_itemThucHanh{
+            border: 1px solid #000;
+            width: 250px;
+            height: 200px;
+
+            li{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    #content_TH{
+        width: 350px;
+        h2{
+            
+        }
+
+        .box_labthuchanh{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 150px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+            gap: 50px; /* Khoảng cách giữa các item */
+            justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
+            margin: auto;
+
+            .box_itemThucHanh{
+                border: 1px solid #000;
+                width: 150px;
+                height: 150px;
+
+                li{
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

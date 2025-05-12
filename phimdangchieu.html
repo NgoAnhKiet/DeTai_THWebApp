@@ -9,7 +9,7 @@
     <link rel="icon" href="./assets/images/logo_LonaKyleCinemaNew.png">
 
     <!-- Css styles -->
-    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- font-awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -43,7 +43,7 @@
         <div id="menu">
           <ul>
             <li><a href="index.html">Trang Chủ</a></li>
-            <li class="dropdown_cha">
+            <li class="dropdown_cha active_menu">
               <a href="#">Phim</a>
               <ul class="dropdown_con">
                 <li><a href="phimdangchieu.html">Phim Đang Chiếu</a></li>
@@ -73,8 +73,17 @@
                     </div>
                     <span class="tag t18">T18</span>
                 </div>
+
+                <div class="movie-actions">
+                  <button class="btn btn-book">Đặt vé</button>
+                  <button class="btn btn-detail">Xem chi tiết</button>
+                  <!-- <button class="btn btn-trailer">Xem trailer</button> -->
+                  <a class="btn btn-trailer" href="https://www.youtube.com/embed/QiXNbEKF3U0?si=KZQu-sep4qfwaGSr" target="movie-frame">Xem trailer</a>
+                </div>
+                <div class="overlay"></div> <!-- Thêm lớp phủ tối -->
               </div>
   
+
               <div class="movie-item">
                 <img src="./assets/images/content_Thunderbolts.jpg" alt="Biệt Đội Sấm Sét">
                 <div class="movie-info">
@@ -84,8 +93,16 @@
                     </div>
                     <span class="tag t13">T13</span>
                 </div>
+
+                <div class="movie-actions">
+                  <button class="btn btn-book">Đặt vé</button>
+                  <button class="btn btn-detail">Xem chi tiết</button>
+                  <button class="btn btn-trailer">Xem trailer</button>
+                </div>
+                <div class="overlay"></div> <!-- Thêm lớp phủ tối -->
               </div>
     
+
               <div class="movie-item">
                 <img src="./assets/images/content_LatMat8.jpg" alt="Lật Mặt 8">
                 <div class="movie-info">
@@ -95,9 +112,17 @@
                     </div>
                      <span class="tag t16">T16</span>
                 </div>
+
+                <div class="movie-actions">
+                  <button class="btn btn-book">Đặt vé</button>
+                  <button class="btn btn-detail">Xem chi tiết</button>
+                  <button class="btn btn-trailer">Xem trailer</button>
+                </div>
+                <div class="overlay"></div> <!-- Thêm lớp phủ tối -->
               </div>
     
-              <div class="movie-item">
+
+              <!-- <div class="movie-item">
                 <img src="./assets/images/content_DiaDao.jpg" alt="Địa Đạo">
                 <div class="movie-info">
                     <h3>ĐỊA ĐẠO</h3>
@@ -108,6 +133,7 @@
                 </div>
               </div>
     
+
               <div class="movie-item">
                 <img src="./assets/images/content_ChuyenMuonThu.jpg" alt="Chuyện Muôn Thú">
                 <div class="movie-info">
@@ -119,6 +145,7 @@
                 </div>
               </div>
     
+
               <div class="movie-item">
                 <img src="./assets/images/content_HolyNight.jpg" alt="Holy Night">
                 <div class="movie-info">
@@ -130,6 +157,7 @@
                 </div>
               </div>
     
+              
               <div class="movie-item">
                 <img src="./assets/images/content_Shin.jpg" alt="Shin Cậu Bé Bút Chì">
                 <div class="movie-info">
@@ -139,7 +167,7 @@
                     </div>
                      <span class="tag t0">T0</span>
                 </div>
-              </div>
+              </div> -->
   
             </div>
           </div>
@@ -192,7 +220,7 @@
             <tr><td colspan="4" style="height: 20px;"></td></tr>
             <tr>
               <td rowspan="4"><img id="logo_footer" src="./assets/images/logo_LonaKyleCinemaNew.png" alt="logo_LonaKyleCinema"></td>
-              <th>CÔNG TY TNHH LONAKYLECINEMA</th>
+              <th>CÔNG TY TNHH LONAKYLE CINEMA</th>
             </tr>
             <tr>
               <td>Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh</td>
@@ -226,10 +254,17 @@
           </div>
         </div>
       
+      <!-- ------------------------------Overlay chứa iframe------------------------------ -->
+        <div id="iframe-overlay" class="iframe-overlay">
+          <div class="iframe-container">
+            <iframe id="movie-frame" src="" frameborder="0" name="movie-frame"></iframe>
+            <button id="close-iframe">X</button>
+          </div>
+        </div>
     </div>
 
     <!-- js homepage -->
-     <script src="./assets/js/homepage.js"></script>
+     <script src="./assets/js/main.js"></script>
 
     <!-- Js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

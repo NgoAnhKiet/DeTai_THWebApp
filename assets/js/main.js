@@ -52,3 +52,25 @@ dots.forEach((li, key) => {
 })
 
 let refreshSlider = setInterval(() => {next.click()}, 5000); //Tự động chuyển slide sau 5000 mili giây (5s)
+
+
+/*------------------------------------Overlay chứa iframe------------------------------------*/
+// Khi click "Xem chi tiết"
+document.querySelectorAll('.btn-trailer').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Ngăn target tự động gán
+        const videoUrl = this.getAttribute('href'); // Lấy link từ href
+        const iframe = document.getElementById('movie-frame');
+
+        iframe.src = videoUrl; // Gán video vào iframe
+        document.getElementById('iframe-overlay').style.display = 'flex'; // Hiện overlay
+    });
+});
+
+// Đóng iframe
+document.getElementById('close-iframe').addEventListener('click', () => {
+    document.getElementById('iframe-overlay').style.display = 'none';
+    document.getElementById('movie-frame').src = ''; // Dừng video
+});
+
+
