@@ -44,15 +44,24 @@
 
             .box_itemThucHanh{
                 border: 1px solid #000;
-                width: 150px;
+                width: 120px;
                 height: 150px;
 
-                li{
-                    a{
-                        font-size: 10px;
+                ul{
+                    h3{
+                        font-size: 15px;
+                    }
+                    li{
+                        a{
+                            font-size: 10px;
+                        }
                     }
                 }
             }
         }
+    }
+
+    #content_TH > h2{
+        text-align: center;
     }
 }
