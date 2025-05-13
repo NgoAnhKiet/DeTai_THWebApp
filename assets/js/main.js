@@ -54,29 +54,70 @@ dots.forEach((li, key) => {
 let refreshSlider = setInterval(() => {next.click()}, 5000); //Tự động chuyển slide sau 5000 mili giây (5s)
 
 
-/*------------------------------------Overlay chứa iframe------------------------------------*/
+//------------------Pop Up------------------
+const movieDetails = {
+    "Lật Mặt 8: Tấm Vé Định Mệnh": {
+      title: "Lật Mặt 8: Tấm Vé Định Mệnh",
+      description: "Thể loại: Hành động, Hài hước\nThời lượng: 120 phút\nKhởi chiếu: 26/04/2024"
+    },
+    "Thám Tử Kiên": {
+      title: "Thám Tử Kiên",
+      description: "Thể loại: Hành động, Trinh thám\nThời lượng: 110 phút\nKhởi chiếu: 15/05/2024"
+    },
+    "Gia Tài Của Ngoại": {
+      title: "Gia Tài Của Ngoại",
+      description: "Thể loại: Hài hước, Tình cảm\nThời lượng: 115 phút\nKhởi chiếu: 07/06/2024"
+    },
+    "Những Gã Trai Hư: Chơi Hay Bị Xơi": {
+      title: "Những Gã Trai Hư: Chơi Hay Bị Xơi",
+      description: "Thể loại: Hành động, Hài hước\nThời lượng: 115 phút\nKhởi chiếu: 07/06/2024"
+    },
+    "Linh Hồn Vũ Nữ 2: Nghi Thức Hồi Sinh": {
+      title: "Linh Hồn Vũ Nữ 2: Nghi Thức Hồi Sinh",
+      description: "Thể loại: Kinh dị\nThời lượng: 122 phút\nKhởi chiếu: 07/06/2024"
+    },
+    "Móng Vuốt": {
+      title: "Móng Vuốt",
+      description: "Thể loại: Kinh dị\nThời lượng: Chưa công bố\nKhởi chiếu: 07/06/2024"
+    }
+  };
 
-//   document.querySelectorAll(".trailer-btn").forEach((btn) => {
-//     btn.addEventListener("click", function () {
-//       const youtubeLink = this.getAttribute("data-link");
-//       const overlay = document.getElementById("iframe-overlay");
-//       const frame = document.getElementById("movie-frame");
+  // Nút Chi tiết phim
+  const detailButtons = document.querySelectorAll(".btn-detail");
+  const popup = document.getElementById("popup-detail");
+  const popupTitle = document.getElementById("popup-title");
+  const popupDescription = document.getElementById("popup-description");
 
-//       frame.src = youtubeLink;
-//       overlay.classList.add("active");
-//     });
-//   });
+  // Kiểm tra phần tử popup có tồn tại hay không
+  if (detailButtons.length && popup && popupTitle && popupDescription) {
+    detailButtons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const movieTitle = this.closest(".movie-item").querySelector("h3").innerText;
+        const details = movieDetails[movieTitle];
 
-//   document.getElementById("close-iframe").addEventListener("click", function () {
-//     const overlay = document.getElementById("iframe-overlay");
-//     const frame = document.getElementById("movie-frame");
+        if (details) {
+          popupTitle.innerText = details.title;
+          popupDescription.innerText = details.description;
+        } else {
+          popupTitle.innerText = "Không có thông tin chi tiết";
+          popupDescription.innerText = "Không có thông tin cho phim này.";
+        }
 
-//     frame.src = "";
-//     overlay.classList.remove("active");
-//   });
+        // Đảm bảo popup luôn được hiển thị khi bấm nút chi tiết
+        popup.style.display = "flex";
+        console.log("Popup đã được mở");
+      });
+    });
 
-
-
+    // Đóng popup khi bấm ra ngoài
+    popup.addEventListener("click", function (e) {
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  } else {
+    console.error("Một trong các phần tử chi tiết phim hoặc popup không tồn tại.");
+  }
 
 
 
