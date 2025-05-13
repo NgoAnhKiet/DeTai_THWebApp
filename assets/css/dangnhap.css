@@ -50,3 +50,58 @@
         }
     }
 }
+
+@media screen and (max-width: 450px){
+
+    #content_DN{
+        .dangnhap{
+            text-align: center;
+
+            h2{
+
+            }
+
+            .khung_dangnhap{
+                margin: auto;
+                width: 300px;
+                height: 185px;
+                border: 1px solid #000;
+
+                table{
+                    /* width: 100%; */
+                    margin: auto;
+                    margin-top: 25px;
+                    tr{
+                        /* width: 100%; */
+                        td{
+                            font-size: 10px;
+                            padding: 5px;
+
+                            a{
+                                text-decoration: none;
+
+                                #nutDN{
+
+                                }
+                            }
+
+                            #nut_DN{
+                                border: 1px solid #000;
+                                padding: 5px;
+                                color: #000;
+                            }
+
+                            #nut_DN:hover{
+                                background-color: #ccc;
+                            }
+
+                            input{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
