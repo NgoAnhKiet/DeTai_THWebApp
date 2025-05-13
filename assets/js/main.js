@@ -55,22 +55,28 @@ let refreshSlider = setInterval(() => {next.click()}, 5000); //Tự động chuy
 
 
 /*------------------------------------Overlay chứa iframe------------------------------------*/
-// Khi click "Xem chi tiết"
-document.querySelectorAll('.btn-trailer').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Ngăn target tự động gán
-        const videoUrl = this.getAttribute('href'); // Lấy link từ href
-        const iframe = document.getElementById('movie-frame');
 
-        iframe.src = videoUrl; // Gán video vào iframe
-        document.getElementById('iframe-overlay').style.display = 'flex'; // Hiện overlay
-    });
-});
+//   document.querySelectorAll(".trailer-btn").forEach((btn) => {
+//     btn.addEventListener("click", function () {
+//       const youtubeLink = this.getAttribute("data-link");
+//       const overlay = document.getElementById("iframe-overlay");
+//       const frame = document.getElementById("movie-frame");
 
-// Đóng iframe
-document.getElementById('close-iframe').addEventListener('click', () => {
-    document.getElementById('iframe-overlay').style.display = 'none';
-    document.getElementById('movie-frame').src = ''; // Dừng video
-});
+//       frame.src = youtubeLink;
+//       overlay.classList.add("active");
+//     });
+//   });
+
+//   document.getElementById("close-iframe").addEventListener("click", function () {
+//     const overlay = document.getElementById("iframe-overlay");
+//     const frame = document.getElementById("movie-frame");
+
+//     frame.src = "";
+//     overlay.classList.remove("active");
+//   });
+
+
+
+
 
 

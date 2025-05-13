@@ -78,7 +78,8 @@
                   <button class="btn btn-book">Đặt vé</button>
                   <button class="btn btn-detail">Xem chi tiết</button>
                   <!-- <button class="btn btn-trailer">Xem trailer</button> -->
-                  <a class="btn btn-trailer" href="https://www.youtube.com/embed/QiXNbEKF3U0?si=KZQu-sep4qfwaGSr" target="movie-frame">Xem trailer</a>
+                  <!-- <a class="btn btn-trailer" href="https://www.youtube.com/embed/tG_Ito2MUWg?si=54OuBWNF3ELmagL3">Xem trailer</a> -->
+                  <button class="trailer-btn" data-link="https://www.youtube.com/embed/tG_lto2MUWg?si=54OuBWNF3ELmagL3">Xem trailer</button>
                 </div>
                 <div class="overlay"></div> <!-- Thêm lớp phủ tối -->
               </div>
@@ -255,12 +256,14 @@
         </div>
       
       <!-- ------------------------------Overlay chứa iframe------------------------------ -->
-        <div id="iframe-overlay" class="iframe-overlay">
+        <div id="iframe-overlay">
           <div class="iframe-container">
-            <iframe id="movie-frame" src="" frameborder="0" name="movie-frame"></iframe>
-            <button id="close-iframe">X</button>
+            <span id="close-iframe">✖</span>
+            <iframe id="movie-frame" src="" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
+
+
     </div>
 
     <!-- js homepage -->
