@@ -19,9 +19,12 @@
             width: 250px;
             height: 200px;
 
-            li{
-                a{
-                    font-size: 20px;
+            ul{
+                padding-top: 10px;
+                li{
+                    a{
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -47,6 +50,7 @@
                 height: 150px;
 
                 ul{
+                padding-top: 4px;
                     h3{
                         font-size: 15px;
                     }
