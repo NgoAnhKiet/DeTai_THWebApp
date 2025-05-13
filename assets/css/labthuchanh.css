@@ -37,10 +37,9 @@
 
         .box_labthuchanh{
             display: grid;
-            grid-template-columns: repeat(auto-fit, 150px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
-            gap: 50px; /* Khoảng cách giữa các item */
-            justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
-            margin: auto;
+            grid-template-columns: repeat(auto-fit, 120px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+            gap: 25px; /* Khoảng cách giữa các item */
+            justify-content: center;
 
             .box_itemThucHanh{
                 border: 1px solid #000;
