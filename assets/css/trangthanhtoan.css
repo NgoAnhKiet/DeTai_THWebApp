@@ -1,5 +1,5 @@
 /*------------------------------------Content_TH------------------------------------*/
-#content_TH{
+#content_TTT{
     margin: 0 auto;
     width: 1200px;
     max-width: 90%;
@@ -8,65 +8,79 @@
         margin-top: 50px;
     }
 
-    .box_labthuchanh{
+    .box_thanhtoan{
         display: grid;
         grid-template-columns: repeat(auto-fit, 250px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
         gap: 50px; /* Khoảng cách giữa các item */
         justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
 
-        .box_itemThucHanh{
+        .box_QR{
             border: 1px solid #000;
             width: 250px;
-            height: 200px;
+            height: 360px;
+            text-align: center;
 
-            ul{
-                padding-top: 10px;
-                li{
-                    a{
-                        font-size: 20px;
-                    }
-                }
+            h3{
+                margin-top: 10px;
+            }
+
+            .QR{
+                width: 240px;
             }
         }
     }
-}
 
-#content_TH > h2{
-        text-align: center;
+    a{
+        display: block;
+        width: fit-content;
+        padding: 5px;
+        border: 1px solid #000;
+        margin: auto;
+        margin-top: 50px;
+        text-decoration: none;
+        color: #000;
     }
 
+    a:hover{
+        background-color: #ccc;
+    }
+}
+
+#content_TTT > h2{
+    text-align: center;
+}
+
 @media screen and (max-width: 450px){
-    #content_TH{
+    #content_TTT{
         width: 350px;
         h2{
             
         }
 
-        .box_labthuchanh{
+        .box_thanhtoan{
             display: grid;
             grid-template-columns: repeat(auto-fit, 120px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
             gap: 25px; /* Khoảng cách giữa các item */
             justify-content: center;
 
-            .box_itemThucHanh{
+            .box_QR{
                 border: 1px solid #000;
                 width: 120px;
-                height: 150px;
+                height: 180px;
 
-                ul{
-                padding-top: 4px;
-                    h3{
-                        font-size: 15px;
-                    }
-                    li{
-                        a{
-                            font-size: 10px;
-                        }
-                    }
+                h3{
+                    margin-top: 10px;
+                    font-size: 15px;
+                }
+
+                .QR{
+                    width: 110px;
                 }
             }
         }
     }
 
-    
+    #content_TH > h2{
+        text-align: center;
+    }
 }
