@@ -1,0 +1,75 @@
+#content_DV{
+    .datve{
+        text-align: center;
+
+        h2{
+            margin-top: 50px;
+        }
+
+        .khung_datve{
+            margin: auto;
+            width: 800px;
+            height: 520px;
+            border: 1px solid #000;
+
+            table{
+                margin: auto;
+                margin-top: 25px;
+                font-size: 25px;
+
+                tr{
+                    td{
+                        /* padding: 10px; */
+                    }
+
+                    .title{
+                        float: left;
+                    }
+                }
+
+                .ghe{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    #content_DV{
+        .datve{
+            text-align: center;
+
+            h2{
+                margin-top: 50px;
+            }
+
+            .khung_datve{
+                margin: auto;
+                width: 350px;
+                height: 360px;
+                border: 1px solid #000;
+
+                table{
+                    margin: auto;
+                    margin-top: 25px;
+                    font-size: 10px;
+
+                    tr{
+                        td{
+                            /* padding: 10px; */
+                        }
+
+                        .title{
+                            float: left;
+                        }
+                    }
+
+                    .ghe{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
