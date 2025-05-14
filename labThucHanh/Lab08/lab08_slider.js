@@ -1,0 +1,48 @@
+
+/*------------------------------------Slider------------------------------------*/
+let list_slider = document.querySelector('#slider .list_slider');
+let item_slider = document.querySelectorAll('#slider .list_slider .item_slider');
+let dots = document.querySelectorAll('.dots_slider li');
+let prev = document.getElementById('prev_slider');
+let next = document.getElementById('next_slider');
+
+let active = 0;
+let lengthItems = item_slider.length - 1;
+
+//------------------Next Button------------------
+next.onclick = function(){
+    if(active + 1 > lengthItems){
+        active = 0;
+    }else{
+        active += 1;
+    }
+    reloadSlider();
+}
+
+//------------------Prev Button------------------
+prev.onclick = function(){
+    if(active - 1 < 0){
+        active = lengthItems;
+    }else{
+        active -= 1;
+    }
+    reloadSlider();
+}
+
+//------------------Hàm cập nhật vị trí Slides và Dots------------------
+function reloadSlider(){
+    let checkLeft = item_slider[active].offsetLeft;
+    list_slider.style.left = - checkLeft + 'px';
+
+    let lastActiveDot = document.querySelector('.dots_slider li.active_slider');
+    lastActiveDot.classList.remove('active_slider'); //Xóa active dot cũ
+    dots[active].classList.add('active_slider'); //Active dot mới
+}
+
+//------------------Nhấn Dots để hiện Slides tương ứng------------------
+dots.forEach((li, key) => {
+    li.addEventListener('click', function(){
+        active = key;
+        reloadSlider();
+    })
+})

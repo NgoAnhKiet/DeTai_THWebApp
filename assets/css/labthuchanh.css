@@ -17,13 +17,14 @@
         .box_itemThucHanh{
             border: 1px solid #000;
             width: 250px;
-            height: 200px;
+            height: 300px;
 
             ul{
                 padding-top: 10px;
                 li{
                     a{
                         font-size: 20px;
+                        text-decoration: none;
                     }
                 }
             }
@@ -51,16 +52,16 @@
             .box_itemThucHanh{
                 border: 1px solid #000;
                 width: 120px;
-                height: 150px;
+                height: 180px;
 
                 ul{
                 padding-top: 4px;
                     h3{
-                        font-size: 15px;
+                        font-size: 12px;
                     }
                     li{
                         a{
-                            font-size: 10px;
+                            font-size: 8px;
                         }
                     }
                 }

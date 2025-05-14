@@ -1,0 +1,61 @@
+.menu_ngang{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    background-color: aquamarine;
+    line-height: 50px;
+    width: 650px;
+
+    li{
+        margin: 0;
+        padding: 0 10px;
+        width: 110px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            font-size:25px;
+            padding: 15px 0;
+        }
+
+        a:hover{
+            font-weight: bold;
+            color: #fff;
+        }
+
+        
+    }
+
+    li:hover{
+        background-color: yellow;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+}
+
+.menu_doc{
+    margin: 0;
+    padding-left: 0;
+    line-height: 40px;
+    background-color: blue;
+    width: 310px;
+
+    li{
+        margin: 0;
+        list-style: none;
+        padding-left: 15px;
+        border-bottom: 1px solid #fff;
+
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            color: #000 ;
+        }
+    }
+
+    li:hover{
+        background-color: aqua;
+        font-style: italic; 
+    }
+}

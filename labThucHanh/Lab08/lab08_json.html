@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab08-json</title>
+</head>
+<body>
+    <div id="app">
+        <h1>User Information</h1>
+        <div id="userInfo"></div>
+    </div>
+    <script>
+        var userData = {
+            "name":"Ngô Anh Kiệt",
+            "age":21,
+            "email": "dh52200948@student.stu.edu.vn",
+            "address":{
+                "city":"Thành phố Hồ Chí Minh",
+                "district":"Quận 6"
+            }
+        }
+
+        function displayUserInfo(data){
+            var userInfoElement = document.getElementById('userInfo');
+            userInfoElement.innerHTML =`
+                <p><strong>Name: </strong> ${data.name} </p>
+                <p><strong>Age: </strong> ${data.age} </p>
+                <p><strong>Email: </strong> ${data.email} </p>
+                <p><strong>Address: </strong>${data.address.district} ${data.address.city}</p>         `
+        }
+
+        displayUserInfo(userData)
+    </script>
+</body>
+</html>
