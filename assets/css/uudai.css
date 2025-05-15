@@ -1,0 +1,54 @@
+/*------------------------------------Content_TH------------------------------------*/
+#content_UD{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 90%;
+
+    h2{
+        margin-top: 50px;
+    }
+
+    .box_uudai{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+        gap: 50px; /* Khoảng cách giữa các item */
+        justify-content: flex-start; /*Các item bắt đầu từ bên trái*/
+
+        .uudai{
+            border: 1px solid #000;
+            width: 250px;
+            height: 360px;
+            text-align: center;
+        }
+    }
+}
+
+#content_TTT > h2{
+    text-align: center;
+}
+
+@media screen and (max-width: 450px){
+    #content_UD{
+        width: 350px;
+        h2{
+            
+        }
+
+        .box_uudai{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 120px); /* Tạo thêm item và giữ kích thước cố định 220px nếu có chỗ */
+            gap: 25px; /* Khoảng cách giữa các item */
+            justify-content: center;
+
+            .uudai{
+                border: 1px solid #000;
+                width: 120px;
+                height: 180px;
+            }
+        }
+    }
+
+    #content_TH > h2{
+        text-align: center;
+    }
+}
