@@ -40,12 +40,13 @@
             border: 1px solid #000;
 
             table{
-                width: 399px;
+                width: 360px;
                 margin: auto;
                 margin-top: 25px;
 
                 tr{
                     .khung_trai{
+                        width: 240;
                         h2{
                             font-size: 15px;
                         }
@@ -58,6 +59,7 @@
                     }
 
                     .khung_phai{
+                        width: 120px;
                         img{
                             width: 100px;
                         }
