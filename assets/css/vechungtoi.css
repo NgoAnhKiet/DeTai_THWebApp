@@ -11,7 +11,7 @@
             margin-top: 25px;
 
             tr{
-                td{
+                .khung_anh{
                     img{
                         width: 390px;
                     }
@@ -49,14 +49,19 @@
                                 font-size: 8px;
                             }
                         }
+                    }
 
-                        img{
-                            width: 150px;
-                        }
+                    .khung_anh{
+                        text-align: center;
 
                         .hidden{
                             display: block;
                         }
+
+                        img{
+                            width: 100px;
+                        }
+
                     }
                 }
             }
