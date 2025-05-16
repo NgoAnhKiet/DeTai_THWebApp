@@ -11,10 +11,15 @@
             margin-top: 25px;
 
             tr{
-                td{
+                .khung_trai{
+                    width: 700px;
+                }
+                .khung_phai{
+                    width: 300px;
+                    text-align: center;
                     img{
                         padding: 5px;
-                        width: 390px;
+                        width: 300px;
                     }
 
                     .hidden{
@@ -35,12 +40,12 @@
             border: 1px solid #000;
 
             table{
-                width: 400px;
+                width: 399px;
                 margin: auto;
                 margin-top: 25px;
 
                 tr{
-                    td{
+                    .khung_trai{
                         h2{
                             font-size: 15px;
                         }
@@ -50,14 +55,17 @@
                                 font-size: 8px;
                             }
                         }
+                    }
 
+                    .khung_phai{
                         img{
                             width: 100px;
                         }
 
                         .hidden{
+                            margin: auto;
                             display: block;
-                        }
+                        }                        
                     }
                 }
             }
